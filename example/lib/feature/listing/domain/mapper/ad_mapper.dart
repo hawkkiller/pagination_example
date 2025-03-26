@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:example/feature/listing/model/ad.dart';
-import 'package:example/feature/listing/model/ad_dto.dart';
+import 'package:example/feature/listing/domain/entity/ad.dart';
+import 'package:example/feature/listing/data/dto/ad_dto.dart';
 import 'package:money2/money2.dart';
 
 class AdMapper extends Converter<AdDto, Ad> {

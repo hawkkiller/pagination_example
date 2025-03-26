@@ -1,6 +1,6 @@
-import 'package:example/feature/listing/data/ad_mapper.dart';
+import 'package:example/feature/listing/domain/mapper/ad_mapper.dart';
 import 'package:example/feature/listing/data/ads_datasource.dart';
-import 'package:example/feature/listing/model/ad.dart';
+import 'package:example/feature/listing/domain/entity/ad.dart';
 
 abstract interface class AdsRepository {
   Future<List<Ad>> queryAds({

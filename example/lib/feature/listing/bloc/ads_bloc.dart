@@ -1,6 +1,6 @@
 import 'package:collection/collection.dart';
-import 'package:example/feature/listing/data/ads_repository.dart';
-import 'package:example/feature/listing/model/ad.dart';
+import 'package:example/feature/listing/domain/ads_repository.dart';
+import 'package:example/feature/listing/domain/entity/ad.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 sealed class AdsEvent {

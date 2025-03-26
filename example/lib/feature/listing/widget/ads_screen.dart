@@ -1,6 +1,6 @@
 import 'package:example/feature/listing/bloc/ads_bloc.dart';
 import 'package:example/feature/listing/data/ads_datasource.dart';
-import 'package:example/feature/listing/data/ads_repository.dart';
+import 'package:example/feature/listing/domain/ads_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

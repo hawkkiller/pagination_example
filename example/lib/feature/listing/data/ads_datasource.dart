@@ -1,4 +1,4 @@
-import 'package:example/feature/listing/model/ad_dto.dart';
+import 'package:example/feature/listing/data/dto/ad_dto.dart';
 import 'package:http/http.dart';
 
 abstract interface class AdsDataSource {
