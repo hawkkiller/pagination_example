@@ -81,7 +81,7 @@ class _AdsScreenState extends State<AdsScreen> {
                     final ad = state.items[index];
                     return ListTile(
                       title: Text(ad.title),
-                      subtitle: Text(ad.price.toString()),
+                      subtitle: Text(ad.price.format()),
                       onTap: () {
                         // Handle ad tap
                       },

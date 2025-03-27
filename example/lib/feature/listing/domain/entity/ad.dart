@@ -9,7 +9,7 @@ class Ad {
 
   final String id;
   final String title;
-  final Money price;
+  final Price price;
 
   @override
   String toString() {
@@ -25,4 +25,17 @@ class Ad {
 
   @override
   int get hashCode => Object.hash(id, title, price);
+}
+
+class Price {
+  Price({
+    required int amount,
+    required String currency,
+  }) : _money = Money.fromInt(amount, isoCode: currency);
+
+  final Money _money;
+
+  String format() {
+    return _money.format('S###,###.00');
+  }
 }

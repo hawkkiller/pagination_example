@@ -50,13 +50,13 @@ class AdsDatasourceFake implements AdsDataSource {
     List<String> filters = const [],
     String? sort,
   }) async {
-    await Future.delayed(const Duration(milliseconds: 5000));
+    await Future.delayed(const Duration(milliseconds: 2500));
 
     return List.generate(
       limit,
       (index) => AdDto(
         id: "${offset + index}",
-        price: AdPriceDto(amount: (offset + index) * 100, currency: 'USD'),
+        price: AdPriceDto(amount: (offset + index) * 123, currency: 'USD'),
         title: 'Ad ${offset + index}',
       ),
     );

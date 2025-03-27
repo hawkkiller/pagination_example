@@ -1,8 +1,7 @@
 import 'dart:convert';
 
-import 'package:example/feature/listing/domain/entity/ad.dart';
 import 'package:example/feature/listing/data/dto/ad_dto.dart';
-import 'package:money2/money2.dart';
+import 'package:example/feature/listing/domain/entity/ad.dart';
 
 class AdMapper extends Converter<AdDto, Ad> {
   const AdMapper({
@@ -21,13 +20,11 @@ class AdMapper extends Converter<AdDto, Ad> {
   }
 }
 
-class AdPriceMapper extends Converter<AdPriceDto, Money> {
+class AdPriceMapper extends Converter<AdPriceDto, Price> {
   const AdPriceMapper();
 
   @override
-  Money convert(AdPriceDto input) {
-    final currency = Currency.create(input.currency, 2);
-
-    return Money.fromIntWithCurrency(input.amount, currency);
+  Price convert(AdPriceDto input) {
+    return Price(amount: input.amount, currency: input.currency);
   }
 }
